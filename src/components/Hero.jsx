@@ -12,7 +12,7 @@ export default function Hero() {
       id="home"
       className="overflow-hidden bg-gradient-to-br from-brand-50 via-white to-[#e7f7f0]"
     >
-      <div className="container-page grid min-h-[610px] items-center gap-12 py-16 lg:grid-cols-[1.05fr_.95fr] lg:py-20">
+      <div className="container-page grid min-h-[610px] items-center gap-12 py-10 lg:grid-cols-[1.05fr_.95fr] lg:py-14">
         <div>
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-brand-100 bg-white px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-brand-700">
             <span className="h-2 w-2 rounded-full bg-brand-500" /> Your
