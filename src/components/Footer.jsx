@@ -1,2 +1,69 @@
-import {HeartPulse,MessageCircle,MapPin,ArrowUp} from 'lucide-react';import {store,whatsappLink} from '../config';
-export default function Footer(){return <footer className="bg-[#103c3a] py-12 text-white"><div className="container-page grid gap-10 border-b border-white/15 pb-10 md:grid-cols-3"><div><a href="#home" className="flex items-center gap-2 text-2xl font-extrabold"><HeartPulse/>{store.shortName}</a><p className="mt-4 max-w-xs text-sm leading-relaxed text-white/65">{store.tagline} Genuine medicines, wellness essentials and service you can count on.</p></div><div><h3 className="font-extrabold">Quick links</h3><div className="mt-4 grid grid-cols-2 gap-3 text-sm text-white/70">{[['Home','#home'],['About','#about'],['Medicines','#medicines'],['Services','#services'],['Gallery','#gallery'],['Location','#location']].map(([name,href])=><a className="hover:text-white" href={href} key={href}>{name}</a>)}</div></div><div><h3 className="font-extrabold">Connect with us</h3><div className="mt-4 space-y-4 text-sm text-white/70"><a className="flex items-center gap-2 hover:text-white" href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={18}/> WhatsApp home delivery</a><a className="flex items-center gap-2 hover:text-white" href={store.mapsUrl} target="_blank" rel="noreferrer"><MapPin size={18}/> Find our store</a></div></div></div><div className="container-page flex flex-col justify-between gap-3 pt-7 text-xs text-white/50 sm:flex-row"><p>© {new Date().getFullYear()} {store.name}. All rights reserved.</p><a href="#home" className="flex items-center gap-1 hover:text-white">Back to top <ArrowUp size={14}/></a></div></footer>}
+import { HeartPulse, MessageCircle, MapPin, ArrowUp } from "lucide-react";
+import { store, whatsappLink } from "../config";
+export default function Footer() {
+  return (
+    <footer className="bg-[#103c3a] py-12 text-white">
+      <div className="container-page grid gap-10 border-b border-white/15 pb-10 md:grid-cols-3">
+        <div>
+          <a
+            href="#home"
+            className="flex items-center gap-2 text-2xl font-extrabold"
+          >
+            <HeartPulse />
+            {store.shortName} MEDICAL
+          </a>
+          <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/65">
+            {store.tagline} Genuine medicines, wellness essentials and service
+            you can count on.
+          </p>
+        </div>
+        <div>
+          <h3 className="font-extrabold">Quick links</h3>
+          <div className="mt-4 grid grid-cols-2 gap-3 text-sm text-white/70">
+            {[
+              ["Home", "#home"],
+              ["About", "#about"],
+              ["Medicines", "#medicines"],
+              ["Services", "#services"],
+              ["Gallery", "#gallery"],
+              ["Location", "#location"],
+            ].map(([name, href]) => (
+              <a className="hover:text-white" href={href} key={href}>
+                {name}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3 className="font-extrabold">Connect with us</h3>
+          <div className="mt-4 space-y-4 text-sm text-white/70">
+            <a
+              className="flex items-center gap-2 hover:text-white"
+              href={whatsappLink()}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MessageCircle size={18} /> WhatsApp home delivery
+            </a>
+            <a
+              className="flex items-center gap-2 hover:text-white"
+              href={store.mapsUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MapPin size={18} /> Find our store
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="container-page flex flex-col justify-between gap-3 pt-7 text-xs text-white/50 sm:flex-row">
+        <p>
+          © {new Date().getFullYear()} {store.name}. All rights reserved.
+        </p>
+        <a href="#home" className="flex items-center gap-1 hover:text-white">
+          Back to top <ArrowUp size={14} />
+        </a>
+      </div>
+    </footer>
+  );
+}

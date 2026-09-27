@@ -1,3 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-@tailwind base; @tailwind components; @tailwind utilities;
-html { scroll-behavior:smooth; } body { margin:0; font-family:'DM Sans',sans-serif; color:#183d40; } h1,h2,h3,h4 {font-family:Manrope,sans-serif;} ::selection{background:#d7f3eb;} .container-page{@apply mx-auto max-w-7xl px-5 sm:px-8 lg:px-12;} .section-space{@apply py-16 md:py-24;} .btn-primary{@apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-600 px-6 py-3.5 font-bold text-white shadow-lg shadow-brand-600/15 transition hover:-translate-y-0.5 hover:bg-brand-700;} .btn-outline{@apply inline-flex items-center justify-center gap-2 rounded-full border border-brand-600 px-6 py-3.5 font-bold text-brand-700 transition hover:bg-brand-50;} .eyebrow{@apply text-xs font-extrabold uppercase tracking-[0.2em] text-brand-600;}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  color: #183d40;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Manrope, sans-serif;
+}
+::selection {
+  background: #d7f3eb;
+}
+.container-page {
+  @apply mx-auto max-w-7xl px-5 sm:px-8 lg:px-12;
+}
+.section-space {
+  @apply py-16 md:py-24;
+}
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-600 px-6 py-3.5 font-bold text-white shadow-lg shadow-brand-600/15 transition hover:-translate-y-0.5 hover:bg-brand-700;
+}
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-brand-600 px-6 py-3.5 font-bold text-brand-700 transition hover:bg-brand-50;
+}
+.eyebrow {
+  @apply text-xs font-extrabold uppercase tracking-[0.2em] text-brand-600;
+}

@@ -13,7 +13,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 border-b border-brand-100 bg-white/95 backdrop-blur">
-      <nav className="container-page flex h-20 items-center justify-between gap-4">
+      <nav className="container-page flex h-20 items-center justify-between gap-x-4">
         <a href="#home" className="flex shrink-0 items-center gap-2.5">
           <span className="grid h-11 w-11 place-items-center rounded-2xl bg-brand-600 text-white">
             <HeartPulse size={25} />
@@ -21,9 +21,10 @@ export default function Navbar() {
           <span className="text-xl font-extrabold tracking-tight text-ink">
             {store.shortName}
             <span className="block text-[10px] font-bold uppercase tracking-[.18em] text-brand-600">
-              Medical Store
+              Medical Store . Since 2007
             </span>
           </span>
+          
         </a>
         <div className="hidden items-center gap-6 lg:flex">
           {links.map(([label, href]) => (

@@ -18,9 +18,11 @@ export default function Hero() {
             <span className="h-2 w-2 rounded-full bg-brand-500" /> Your
             neighborhood pharmacy
           </div>
+          
           <h1 className="max-w-2xl text-4xl font-extrabold leading-[1.13] tracking-tight text-ink sm:text-5xl xl:text-[4rem]">
             Better health begins{" "}
             <span className="text-brand-600">with better care.</span>
+            <span className="text-brand-600"> Since 2007</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
             Genuine medicines, everyday wellness essentials, and friendly
